@@ -1,0 +1,1 @@
+docker build -t "dervilo/npe5seconds:latest" .

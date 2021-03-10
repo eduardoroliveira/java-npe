@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: npe5seconds
+  name: npe5seconds
+spec:
+  containers:
+  - image: dervilo/npe5seconds
+    name: npe5seconds
+    resources: {}
+    command:
+    - sh 
+    - -c
+    - echo "Sleeping 3600 seconds" && sleep 3600
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
